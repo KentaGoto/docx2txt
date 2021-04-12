@@ -28,3 +28,4 @@ if __name__ == '__main__':
                 f.close()
         
         print("Done!")
+        os.system("pause > nul")
