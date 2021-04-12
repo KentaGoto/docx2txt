@@ -28,4 +28,5 @@ if __name__ == '__main__':
                 f.close()
         
         print("Done!")
+        print("Press any key to exit.")
         os.system("pause > nul")
