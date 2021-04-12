@@ -22,7 +22,6 @@ if __name__ == '__main__':
                 docx = Document(p)
                 f = open(t, 'w', encoding="utf-8")
 
-                # データの表示
                 for j in docx.paragraphs:
                     f.write(j.text + "\n")
 
