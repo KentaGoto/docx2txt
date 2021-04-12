@@ -1,7 +1,7 @@
 # docx2txt 
 
 ## Description  
-Convert *.docx to plain text (*.txt (utf8 without BOM)).  
+Convert \*.docx to plain text (\*.txt (utf8 without BOM)).  
 
 ## License
 MIT
