@@ -11,22 +11,22 @@ def all_files(directory):
             yield os.path.join(root, file)
 
 if __name__ == '__main__':
-        s = input("Dir: ")
-        root_dir = s.strip('\"')
+    s = input("Dir: ")
+    root_dir = s.strip('\"')
 
-        for i in all_files(root_dir):
-            p = pathlib.Path(i)
+    for i in all_files(root_dir):
+        p = pathlib.Path(i)
 
-            if p.suffix == ".docx":
-                t = str(p) + '.txt'
-                docx = Document(p)
-                f = open(t, 'w', encoding="utf-8")
+        if p.suffix == ".docx":
+            t = str(p) + '.txt'
+            docx = Document(p)
+            f = open(t, 'w', encoding="utf-8")
 
-                for j in docx.paragraphs:
-                    f.write(j.text + "\n")
+            for j in docx.paragraphs:
+                f.write(j.text + "\n")
 
-                f.close()
-        
-        print("Done!")
-        print("Press any key to exit.")
-        os.system("pause > nul")
+            f.close()
+    
+    print("Done!")
+    print("Press any key to exit.")
+    os.system("pause > nul")
