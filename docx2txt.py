@@ -14,7 +14,11 @@ if __name__ == '__main__':
     s = input("Dir: ")
     root_dir = s.strip('\"')
 
+    print("Processing...")
+    print()
+
     for i in all_files(root_dir):
+        print(i)
         p = pathlib.Path(i)
 
         if p.suffix == ".docx":
@@ -27,6 +31,7 @@ if __name__ == '__main__':
 
             f.close()
     
+    print()
     print("Done!")
     print("Press any key to exit.")
     os.system("pause > nul")
