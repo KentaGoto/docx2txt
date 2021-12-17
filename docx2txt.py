@@ -33,5 +33,4 @@ if __name__ == '__main__':
     
     print()
     print("Done!")
-    print("Press any key to exit.")
     os.system("pause > nul")
